@@ -76,7 +76,7 @@ footer p{
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .footer{
         flex-direction: column;
-        gap: 30px;
+        gap: 5px;
     }
 
     .footerinfo{
