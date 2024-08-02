@@ -1,0 +1,149 @@
+footer{
+    background-color: #FFF5E1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerinfo{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h3{
+    font-size: 30px;
+    color: rgb(228, 96, 20);
+    font-family: cursive;
+}
+
+p{
+    font-size: 18px;
+    font-family: cursive;
+}
+
+#mail{
+    display: flex;
+    gap: 20px;
+}
+
+#mail a{
+    width: 40px;
+    height: 40px;
+}
+
+#mailimg{
+    width: 100%;
+    height: 100%;
+}
+
+.footeritem{
+    font-size: 18px;
+    font-family: cursive;
+}
+
+input{
+    display: block;
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 2px auto;
+    padding: 2px;
+}
+
+input[type=submit] {
+    width: 30%;
+    text-align: center;
+    margin: 40px auto;
+    background-color: rgb(228, 96, 20);
+    color: #FFF5E1;
+}
+
+.legal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footerinfo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    #mail a{
+        width: 20px;
+        height: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .footeritem{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footerinfo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #mail a{
+        width: 25px;
+        height: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .footeritem{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px){
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footerinfo{
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #mail a{
+        width: 25px;
+        height: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .footeritem{
+        font-size: 16px;
+    }
+}

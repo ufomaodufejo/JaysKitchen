@@ -1,0 +1,555 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #FFF5E1;
+    height: 250px;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px
+}
+
+#logo{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+#logoimg {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links{
+    transition: 0.7s ease;
+}
+
+.nav-links:hover{
+    color: rgb(228, 96, 20);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.banner{
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/banner2.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.banner h1{
+    color: rgb(228, 96, 20);;
+    font-size: 120px;
+    font-family: cursive;
+}
+
+.banner p{
+    color: #FFF5E1;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.missionsection{
+    height: 700px;
+    display: flex;
+    margin: 120px 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fooddiv{
+    width: 45%;
+    height: 100%;
+}
+
+article{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article h3{
+    font-size: 80px;
+    color: rgb(228, 96, 20);
+    font-family: cursive;
+}
+
+article p{
+    font-size: 25px;
+}
+
+.menuarrow{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-top: 40px;
+    padding: 10px;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(228, 96, 20);
+    border-radius: 20px;
+}
+
+.menuarrow a{
+    line-height: 1.8;
+    color: #FFF5E1;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.food{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.foodbanner{
+    height: 700px;
+    margin-bottom: 120px;
+}
+
+.foodbanquet{
+    width: 100%;
+    height: 100%;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 120px;
+    align-items: center;
+}
+
+.reviews h3 {
+    font-size: 80px;
+    color: rgb(228, 96, 20);
+    font-family: cursive;
+}
+
+.reviewscontainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.revs{
+    width: 25%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.revsimg{
+    width: 20%;
+    height: 100px;
+    border: 1px solid rgb(228, 96, 20);
+    border-radius: 100%;
+}
+
+.revsimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.revsp{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.revsp P{
+    font-size: 16px;
+    font-family: cursive;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    header{
+        background-color: #FFF5E1;
+        height: 120px;
+    }
+
+    #logo{
+        float: left;
+        height: 100%;
+        width: 40%;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #FFF5E1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .banner{
+        height: 300px;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .banner p{
+        font-size: 16px;
+    }
+
+    .missionsection{
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 5px;
+    }
+
+    .fooddiv{
+        width: 100%;
+        height: 45%;
+    }
+    
+    article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    article h3{
+        font-size: 30px;
+    }
+    
+    article p{
+        font-size: 16px;
+    }
+
+    .menuarrow{
+        width: 300px;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menuarrow a{
+        font-size: 20px;
+    }
+
+    .foodbanner{
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    
+    .reviewscontainer{
+        flex-direction: column;
+    }
+
+    .reviews h3 {
+        font-size: 40px;
+    }
+
+    .revs{
+        width: 90%;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header{
+        background-color: #FFF5E1;
+        height: 150px;
+    }
+
+    #logo{
+        float: left;
+        height: 100%;
+        width: 40%;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 150px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #FFF5E1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .banner{
+        height: 400px;
+    }
+
+    .banner h1{
+        font-size: 40px;
+    }
+
+    .banner p{
+        font-size: 16px;
+    }
+
+    .missionsection{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 5px;
+    }
+
+    .fooddiv{
+        width: 100%;
+        height: 49%;
+    }
+    
+    article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    article h3{
+        font-size: 30px;
+    }
+    
+    article p{
+        font-size: 16px;
+    }
+
+
+    .menuarrow{
+        width: 300px;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menuarrow a{
+        font-size: 20px;
+    }
+
+    .foodbanner{
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    
+    .reviewscontainer{
+        flex-direction: column;
+    }
+
+    .reviews h3 {
+        font-size: 40px;
+    }
+
+    .revs{
+        width: 90%;
+        height: 220px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    header{
+        background-color: #FFF5E1;
+        height: 200px;
+    }
+
+    #logo{
+        float: left;
+        height: 100%;
+        width: 35%;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 180px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #FFF5E1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .banner{
+        height: 500px;
+    }
+
+    .banner h1{
+        font-size: 60px;
+    }
+
+    .banner p{
+        font-size: 18px;
+    }
+
+    .missionsection{
+        height: 700px;
+        display: flex;
+        margin: 120px 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .fooddiv{
+        width: 40%;
+        height: 80%;
+    }
+    
+    article{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article h3{
+        font-size: 50px;
+    }
+    
+    article p{
+        font-size: 20px;
+    }
+
+    .foodbanner{
+        height: 500px;
+        margin-bottom: 120px;
+    }
+
+    .reviewscontainer{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .reviews h3 {
+        font-size: 50px;
+    }
+
+    .revs{
+        width: 90%;
+        height: 220px;
+    }
+}
