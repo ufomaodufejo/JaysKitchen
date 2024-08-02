@@ -24,7 +24,6 @@ h3{
 
 footer p{
     font-size: 18px;
-    font-family: cursive;
 }
 
 #mail{
@@ -47,7 +46,7 @@ footer p{
     font-family: cursive;
 }
 
-input{
+footer input{
     display: block;
     width: 90%;
     height: 40px;
@@ -57,7 +56,7 @@ input{
     padding: 2px;
 }
 
-input[type=submit] {
+footer input[type=submit] {
     width: 30%;
     text-align: center;
     margin: 40px auto;
