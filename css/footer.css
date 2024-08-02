@@ -43,7 +43,6 @@ footer p{
 
 .footeritem{
     font-size: 18px;
-    font-family: cursive;
 }
 
 .footerinfo input{
@@ -83,7 +82,7 @@ footer p{
         width: 100%;
         align-items: center;
         justify-content: center;
-        gap: 0;
+        gap: 0px;
     }
 
     #mail a{
